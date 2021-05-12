@@ -1,0 +1,213 @@
+<html>
+
+<head>
+    <title> College member - Register</title>
+</head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<!-- 04/28/2021 - 19:31 -->
+<!-- 04/29/2021 - 19:16 -->
+<!-- Header responsivity status = All set! Sent to review -->
+
+<!-- Navbar content - Start -->
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                    <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                        data-mdb-targer="#navbarExample01" aria-controls="navbarExample01" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+                <!-- *** Question 01 - About responsivity configuration related to this part-->
+                <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Content</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#">Gallery</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#">Plans</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#">Support</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Navbar content - End -->
+
+    <!-- *** Question 02 - About this background image responsivity -->
+    <!-- Background content - Start -->
+    <!-- <div class="form-group col-12 col-xs-6 col-sm-6 col-md-4 col-lg-3 col-xl-3"> -->
+    <div class="p-5 text-center bg-image" style="background-image: url(https://wallpapercave.com/wp/wp2460545.jpg); 
+        height: 400px;">
+        <!-- Background content - End -->
+
+        <div class="mask" style="background-color: rgba(0,0,0,0.6);">
+            <div class="d-flex justify-content-center align-items-center h-100">
+                <div class="text-white">
+                    <h1 class="mb-3"> Be part of the institution! </h1>
+                    <h4 class="mb-3"> Apply for a study plan and save your seat for the code quality development
+                    </h4>
+                    <a class="btn btn-outline-light btn-lg" href="#!" role="button"> Start my study journey!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- </div> -->
+</header>
+<!-- Header content - End -->
+
+<body>
+    <!-- 04/29/2021 - 19:16 -->
+    <!-- Body responsivity status = All set! Sent to review. -->
+    <form>
+        <div class="container">
+            <div class="row">
+                <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                    <h2>Personal data</h2>
+                </div>
+                <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                    <label for="nameField">Name</label>
+                    <input type="text" class="form-control" id="nameField" aria-describedby="name"
+                        placeholder="Enter the student name...">
+                </div>
+                <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                    <label for="addressField">Address</label>
+                    <input type="text" class="form-control" id="addressField" aria-describedby="address"
+                        placeholder="The student address goes here...">
+                </div>
+                <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                    <label for="emailField">Email</label>
+                    <input type="email" class="form-control" id="emailField" aria-describedby="email"
+                        placeholder="Insert the chosen email...">
+                </div>
+                <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                    <h6> Gender </h6>
+                    <label for="genderOption">Select your option: </label>
+                    <select class="form-control" id="genderOption">
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Other</option>
+                        <option>I'd rather not say</option>
+                    </select>
+                    <small id="genderHelp" class="form-text text-muted">Keep this information private</small>
+                </div>
+                <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                    <label for="rgInput"> RG (Registro Geral | General Register) </label>
+                    <input type="file" class="form-control-file" id="rgInput">
+                </div>
+                <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                    <label for="cpfInput"> CPF (Cadastro de Pessoa Física | Physical Person Register) </label>
+                    <input type="file" class="form-control-file" id="cpfInput">
+                </div>
+                <div class="form-control col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                    <label for="studiesModality"> Studies modality </label>
+                    <select class="form-control form-control-sm">
+                        <option>Normal</option>
+                        <option>Special</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+<!-- 04/29/2021 - 19:16 -->
+<!-- Footer responsivity status = All set! Sent to review. -->
+
+<!-- Footer content - Start -->
+<footer class="bg-dark text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4">
+        <!-- Grid row -->
+        <div class="row">
+            <!-- Images samples - Start -->
+            <div class="form-group col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
+                <img src="https://mdbootstrap.com/img/new/fluid/city/113.jpg" class="w-100"/>
+                <a href="#!">
+                    <div class="mask" style="background-color: rgba(251,251,251,0.2);">
+                    </div>
+                </a>
+            </div>
+            <div class="form-group col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
+                <img src="https://mdbootstrap.com/img/new/fluid/city/112.jpg" class="w-100"/>
+                <a href="#!">
+                    <div class="mask" style="background-color: rgba(251,251,251,0.2);">
+                    </div>
+                </a>
+            </div>
+            <div class="form-group col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
+                <img src="https://mdbootstrap.com/img/new/fluid/city/115.jpg" class="w-100"/>
+                <a href="#!">
+                    <div class="mask" style="background-color: rgba(251,251,251,0.2);">
+                    </div>
+                </a>
+            </div>
+            <!-- Images samples - End -->
+
+            <!-- Insert the 02 text samples after images samples insertion -->
+            <!-- Text samples - Start -->
+            <div class="form-group col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                <h5 class="text-uppercase"> MODULAR WORK </h5>
+            <!-- </div> -->
+            <!-- *** Question 03 - About the divs conflicts -->
+                <p>
+                    All the study process is better when you have capacitated professionals to support you.
+                    If you have any doubt, feel free to interact with our community.
+                    See our work and enjoy all the content prepared specially for you!
+                </p>
+            </div>
+            <div class="form-group col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                <h5 class="text-uppercase"> Global participation </h5>
+                <p>
+                    Our students are located worldwide and we are very proud of this mark!
+                    To have improved knowledge experience, we build classes with students from different countries.
+                    You should try. Aimez-vous programmer en français?
+                    (Do you like to program in French?)
+                </p>
+            </div>
+            <div class="form-group col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                <h5 class="text-uppercase"> Daily flux is fast</h5>
+                <p>
+                    We adopted a high performance time-saving metodology. You are trained by KanBan
+                    specialists and prepared with the most innovated agile techniques to rise the projects.
+                    The clock ticks fast, but here, we will prepare you to be faster. 
+                </p>
+            </div>
+            <!-- Text samples - End  -->
+            <div class="form-group col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <div class="text-center p-3" style="background-color: rgba(0,0,0,0.2);">
+                    © 2021 Copyright:
+                    <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+                </div>
+            </div>
+        </div>
+</footer>
+
+</html>
